@@ -13,5 +13,5 @@ class IncrementMode(Model):
     
     def predict(self, prev_months):
         # codice per far funzionare la predizione
-        # Nota: prev_months deve contenere i dati degli 'n' mesi precedenti
+        # Nota: prev_months deve contenere i dati degli 'n' mesi precedenti 
         pass
