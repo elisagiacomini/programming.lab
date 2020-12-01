@@ -7,6 +7,7 @@
 values = []
 
 try:
+<<<<<<< HEAD
     # Apro e leggo il file, linea per linea
     my_file = open('shampoo_sales.csv', 'r')
 except:
@@ -26,3 +27,27 @@ for line in my_file:
         # Aggiungo alla lista dei valori questo valore
         values.append(float(value))
 print(values)
+=======
+# Apro e leggo il file, linea per linea
+    my_file = open('shampoo_sales_2.csv', 'r')
+
+except:
+    print('Il file è inesistente.')
+
+    for line in my_file:
+        # Faccio lo split di ogni riga sulla virgola
+        elements = line.split(',')
+        
+        # Se NON sto processando l’intestazione...
+        if elements[0] != 'Date':
+            # Setto la data e il valore
+            date = elements[0]
+            value = elements[1]
+            # Aggiungo alla lista dei valori questo valore
+            values.append(float(value))
+    print(values)
+
+somma = sum(values)
+print('La somma dei valori della lista è: {}'.format(somma))
+
+>>>>>>> 0fd18604436024dc997ee58daf7a55785a451073
